@@ -43,10 +43,10 @@ node_server.js
 *.komodoproject
 .komodotools
 
-
 # Folders to ignore
 node_modules
 bower_components
 
 # Ignore all cloud9 and hidden files
 .c9/
+owl-test/

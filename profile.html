@@ -10,71 +10,101 @@
     <link href="docs/assets/css/demo.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="img/favicon.ico" rel="shortcut icon"><!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="dist/js/vendor/html5shiv.js"></script>
       <script src="dist/js/vendor/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-    <div class="container">
-<div class="row">
-    <div class="col-md-6 col-md-offset-2">
-        <h1 class="demo-logo">
-        <span style="font-size:0.8em; font-family: kitten slant; font-weight: 100;">Header</span></h1>
-</div>
-<div class="col-md-2">
-    	<a href="#" style="color: #34485D; text-decoration: underline; float:right; margin-top:2em;"><small><i class="fa fa-sign-out"></i> Logout</small></a>
-</div>
-</div>
-<hr>
-<div id="menubar" class="row">
-        <div class="col-md-9 col-md-offset-2">
-        <h4>Welcome [Name], this is your profile.</h4>
-                <div class="col-md-7">
-                  <small>Time left:</small>
-                            <i class="fa fa-clock-o"></i> 24:00:00<br>
-                  <small>Highest score:</small>
-                            <i class="fa fa-arrow-circle-o-down"></i> 21                	
-                </div>
-                <div class="col-md-4">
-							<small>Status: <span style="color: #f1c40f"> Awaiting moderation</span></small><button class="btn btn-primary btn-lg disabled" style="width:100%; height:100%; vertical-align:baseline;" title="You can bump once you're out of the train in 23:02:31">Bump!</button>                
-                </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12" id="results">
-            <div class="snapresult">
-                <div class="col-md-5 col-xs-3 snapcode">
-                    <img src="squares/sc1.jpg" width="100%">
-                    <h5>username</h5>
-                    <p class="desc">tagline tagline tagline</p>
-                </div>
-                <div class="col-md-7 snapcontent">
-                    <div class="snapwrapper"><img alt="" src="rectangles/sn1.jpg"> <img alt="" src="rectangles/sn2.jpg"> <img alt="" src="rectangles/sn3.jpg"> <img alt="" src="rectangles/sn4.jpg"></div>
-                </div>
-            </div>                  
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12">
-        		<br>
-        	    <a href="profile-confirm.html" style="color: #EB685A">Eliminate my profile</a>
-        	    <br>
-        </div>
-	</div>        
-    </div><!-- /container -->
+<body id="profile">
+  
+  <div class="container-fluid">
+    <div class="row log-out-link">
+      <a href="login.html" style="color: #34485D; text-decoration: underline; float:right;"><small><i class="fa fa-sign-out"></i> Logout</small></a>
+    </div> <!-- .row .log-out-link -->
     
-    <script src="dist/js/vendor/jquery.min.js">
-    </script> 
-    <script src="dist/js/vendor/video.js">
-    </script> 
-    <script src="dist/js/flat-ui.min.js">
-    </script> 
-    <script src="docs/assets/js/application.js">
-    </script> 
-    <script>
-      videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
-    </script>
+    <div class="row">
+      <h1 class="demo-logo">
+        <span style="font-size:0.8em; font-family: kitten slant; font-weight: 100;">Header</span>
+      </h1>
+    </div> <!-- .row .demo-headline -->
+    
+    <hr>
+    
+    <div id="menubar" class="row">
+      <div class="col-md-10 col-md-offset-1">
+      <h4>Welcome [Name], this is your profile.</h4>
+        <div class="col-md-6">
+          <small>Time left: </small><i class="fa fa-clock-o"></i> 24:00:00<br>
+          <small>Highest score: </small><i class="fa fa-arrow-circle-o-down"></i> 21                	
+        </div>
+        <div class="col-md-6">
+					<small>Status: <span style="color: #f1c40f"> Awaiting moderation</span></small><button class="btn btn-primary btn-lg disabled" style="width:100%; height:100%; vertical-align:baseline;" title="You can bump once you're out of the train in 23:02:31">Bump!</button>                
+        </div>
+      </div>
+    </div> <!-- .row #menubar -->
+    
+    <div class="row">
+      <div class="snapresult">
+        <div class="col-md-5 snapcode">
+          <img src="squares/sc2.jpg" width="100%">
+          <h5>username</h5>
+          <p class="desc">tagline tagline tagline tagline</p>
+        </div><!-- .snapcode -->
+        
+        <div class="col-md-7 snapcontent">
+          <div class="owl-carousel owl-carousel-responsive">
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">1</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">2</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">3</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">4</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">5</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">6</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">7</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">8</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">9</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">10</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">11</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">12</div>
+          </div>
+        </div> <!-- .snapcontent -->
+      </div> <!-- .snapresult -->                  
+    </div> <!-- .row -->
+    
+    <div class="row eliminate-profile">
+    	<a href="profile-confirm.html" style="color: #EB685A">Eliminate my profile</a>
+	  </div>       
+    
+  </div> <!-- .container-fluid -->
+  
+  
+<script src="dist/js/vendor/jquery.min.js"></script> 
+  <script src="dist/js/vendor/video.js"></script> 
+  <script src="dist/js/flat-ui.min.js"></script> 
+  <script src="docs/assets/js/application.js"></script> 
+  <script src="dist/js/vendor/owl.carousel.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items:5,
+          loop:true,
+          margin:10,
+          merge:true,
+          responsive:{
+              678:{
+                  mergeFit:true
+              },
+              1000:{
+                  mergeFit:false
+              }
+          }
+      })
+    });
+  </script>
 </body>
-</html>
+</html>  

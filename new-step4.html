@@ -17,6 +17,8 @@
     <link href="docs/assets/css/demo.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -25,8 +27,8 @@
       <script src="dist/js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container">
+  <body id="signup-4">
+    <div class="container-fluid">
       <div class="demo-headline">
         <h1 class="demo-logo">
         <a href="home.html" style="color:#34485D">
@@ -55,14 +57,32 @@
         </div>
     <div class="row">
             <div class="snapresult">
-                <div class="col-md-5 col-xs-3 snapcode">
-                    <img src="squares/sc1.jpg" width="100%">
-                    <h5>username</h5>
-                    <p class="desc">tagine tagline tagline</p>
-                </div>
-                <div class="col-md-7 snapcontent">
-                    <div class="snapwrapper"><img alt="" src="rectangles/sn1.jpg"> <img alt="" src="rectangles/sn2.jpg"> <img alt="" src="rectangles/sn3.jpg"> <img alt="" src="rectangles/sn4.jpg"></div>
-                </div>
+                <div class="col-md-5 snapcode">
+          <img src="squares/sc2.jpg" width="100%">
+          <h5>username</h5>
+          <p class="desc">tagline tagline tagline tagline</p>
+        </div> <!-- .snapcode -->
+        
+        <div class="col-md-7 snapcontent">
+          
+          <div class="owl-carousel owl-carousel-responsive">
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">1</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">2</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">3</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">4</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">5</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">6</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">7</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">8</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">9</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">10</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">11</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">12</div>
+          </div>
+          
+        </div> <!-- .snapcontent -->
             </div>                  
     </div>
         <div class="row">
@@ -86,5 +106,26 @@
     <script>
       videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
     </script>
+    
+    <script src="dist/js/vendor/owl.carousel.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items:5,
+          loop:true,
+          margin:10,
+          merge:true,
+          responsive:{
+              678:{
+                  mergeFit:true
+              },
+              1000:{
+                  mergeFit:false
+              }
+          }
+      })
+    });
+  </script>
   </body>
 </html>

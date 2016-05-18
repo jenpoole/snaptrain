@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Home</title>
     <meta content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version." name="description">
     <meta content="width=1000, initial-scale=1.0, maximum-scale=1.0" name="viewport"><!-- Loading Bootstrap -->
     <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Loading Flat UI -->
@@ -10,97 +10,184 @@
     <link href="docs/assets/css/demo.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="img/favicon.ico" rel="shortcut icon"><!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="dist/js/vendor/html5shiv.js"></script>
       <script src="dist/js/vendor/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-    <div class="container">
-	<div style="position: absolute; width:100%; right:7em; top: 1em" class="row">
-  		<div class="col-md-6 col-md-offset-4">
-    	<a href="login.html" style="color: #34485D; text-decoration: underline; float:right;"><small><i class="fa fa-user"></i> Log in</small></a>
-		</div>
-	</div>    
-    <div class="demo-headline" style="margin-top: -10px; padding-bottom: 30px">
-        <h1 class="demo-logo">
-        <span style="font-size:0.8em; font-family: kitten slant; font-weight: 100;">HEADER</span> <small><a href="new-step1.html">SUB-HEADER</a> <span style="color: #41A5E5">&rarr;</span> TAG LINE</small></h1>
-    </div><!-- /demo-headline -->
-    <div class="row" id="menubar">
-        <div class="col-md-9 col-md-offset-2">
-            <div data-offset-top="195" data-spy="affix">
-                <div class="btn-toolbar" id="menu">
-                    <div class="btn-group">
-                        <a class="btn btn-primary active" href="#fakelink"><i class="fa fa-bolt"></i> Live</a> <a class="btn btn-primary" href="popular.html"><i class="fa fa-star"></i> Popular</a>
-                    </div>
-                </div>
-                <div style="width:190px; float:left; margin-left: 242px;">
-                    <a class="btn btn-danger cta-btn" href="new-step1.html">JOIN</a>
-                </div>
-            </div>
-        </div>
-    </div><!-- #menubar -->
+<body id="home">
+  
+  <div class="container-fluid">
+    <div class="row log-in-link">
+      <a href="login.html" style="color: #34485D; text-decoration: underline; float:right;"><small><i class="fa fa-user"></i> Log in</small></a>
+    </div> <!-- .row .log-in-link -->
     
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-12" id="results">
-            <div class="snapresult">
-                <div class="col-md-5 col-xs-3 snapcode">
-                    <img src="squares/sc1.jpg" width="100%">
-                    <h5>username</h5>
-                    <p class="desc">tagline tagline tagline tagline tagline</p>
-                    <div class="row underdesc">
-                    <div class="row" style="margin-bottom:0.6em;">
-  					 <button class="btn btn-inverse">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
- 					 </div>                         
-                    <i class="fa fa-clock-o"></i> 2:31
-                    </div>
-                </div>
-                <div class="col-md-7 snapcontent">
-                    <div class="snapwrapper"><img alt="" src="rectangles/sn1.jpg"> <img alt="" src="rectangles/sn2.jpg"> <img alt="" src="rectangles/sn3.jpg"> <img alt="" src="rectangles/sn4.jpg"></div>
-                </div>
+    <div class="row demo-headline">
+      <h1 class="demo-logo">
+        <span style="font-size:0.8em; font-family: kitten slant; font-weight: 100;">HEADER</span> <small><a href="new-step1.html">SUB-HEADER</a> <span style="color: #41A5E5">&rarr;</span> TAG LINE</small>
+      </h1>
+    </div> <!-- .row .demo-headline -->
+    
+    <div class="row" id="menubar">
+      <div data-offset-top="195" data-spy="affix">
+          <div class="col-md-6 menubar-left-btn">
+            <!--Left Buttons: Live | Popular-->
+            <div class="btn-group">
+                <a class="btn btn-primary active" href="#fakelink"><i class="fa fa-bolt"></i> Live</a> <a class="btn btn-primary" href="popular.html"><i class="fa fa-star"></i> Popular</a>
             </div>
-            <div class="snapresult">
-                <div class="col-md-5 snapcode">
-                    <img src="squares/sc2.jpg" width="100%">
-                    <h5>username</h5>
-                    <p class="desc">tagline tagline tagline tagline tagline</p>               
-                    <div class="row underdesc">
-                    <div class="row" style="margin-bottom:0.6em;">
-  					 <button class="btn btn-inverse">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
- 					 </div>                         
-                            <i class="fa fa-clock-o"></i> 7:11
-                    </div>
-                </div>
-                <div class="col-md-7 snapcontent">
-                    <div class="snapwrapper"><img alt="" src="rectangles/sn5.jpg"> <img alt="" src="rectangles/sn6.jpg"> <img alt="" src="rectangles/sn7.jpg"> <img alt="" src="rectangles/sn8.jpg"></div>
-                </div>
+          </div>
+          <div class="col-md-6 menubar-right-btn">
+            <!--Right Button: Join-->
+            <div class="btn-group" style="width: 190px">
+                <a class="btn btn-danger cta-btn" href="new-step1.html" style="font-weight: bold;">JOIN</a>
             </div>
-            <div class="snapresult">
-                <div class="col-md-5 snapcode">
-                    <img src="squares/sc3.jpg" width="100%">
-                    <h5>username</h5>
-                    <p class="desc">tagline tagline tagline tagline tagline</p>                   
-                    <div class="row underdesc">
-                    <div class="row" style="margin-bottom:0.6em;">
-  					 <button class="btn btn-inverse">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
- 					 </div>                     
-                            <i class="fa fa-clock-o"></i> 01:31:55
-                    </div>
-                </div>
-                <div class="col-md-7 snapcontent">
-                    <div class="snapwrapper"><img alt="" src="rectangles/sn9.jpg"> <img alt="" src="rectangles/sn4.jpg"> <img alt="" src="rectangles/sn5.jpg"> <img alt="" src="rectangles/sn1.jpg"></div>
-                </div>
-            </div>
-        </div>
-    </div><img src="img/spinner.gif" style="margin: 0 auto; display:block;"></div><!-- /container -->
-    <script src="dist/js/vendor/jquery.min.js">
-    </script> 
-    <script src="dist/js/vendor/video.js">
-    </script> 
-    <script src="dist/js/flat-ui.min.js">
-    </script> 
-    <script src="docs/assets/js/application.js">
-    </script> 
+          </div>
+      </div>
+    </div> <!-- .row #menubar -->
+    
+    <div class="row" id="results">
+      <div class="snapresult">
+        <div class="col-md-5 snapcode">
+          <!--left column: Profile pic, usernamem tagline, download button, time-->
+          <img src="squares/sc2.jpg" width="100%">
+          <h5>username</h5>
+          <p class="desc">tagline tagline tagline tagline</p>
+          <div class="underdesc">
+            <button class="btn btn-inverse" style="margin-bottom:0.6em;">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
+            <div><i class="fa fa-clock-o"></i> 7:11</div>
+          </div>
+        </div> <!-- .snapcode -->
+        
+        <div class="col-md-7 snapcontent">
+          <!--right column: image carousel-->
+          
+          <div class="owl-carousel owl-carousel-responsive">
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">1</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">2</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">3</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">4</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">5</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">6</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">7</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">8</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">9</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">10</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">11</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">12</div>
+          </div>
+          
+        </div> <!-- .snapcontent -->
+      </div> <!-- .snapresult -->
+      
+      
+      
+      
+      <div class="snapresult">
+        <div class="col-md-5 snapcode">
+          <!--left column: Profile pic, usernamem tagline, download button, time-->
+          <img src="squares/sc2.jpg" width="100%">
+          <h5>username</h5>
+          <p class="desc">tagline tagline tagline tagline</p>
+          <div class="underdesc">
+            <button class="btn btn-inverse" style="margin-bottom:0.6em;">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
+            <div><i class="fa fa-clock-o"></i> 7:11</div>
+          </div>
+        </div> <!-- .snapcode -->
+        
+        <div class="col-md-7 snapcontent">
+          <!--right column: image carousel-->
+          
+          <div class="owl-carousel owl-carousel-responsive">
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">1</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">2</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">3</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">4</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">5</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">6</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">7</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">8</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">9</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">10</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">11</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">12</div>
+          </div>
+          
+        </div> <!-- .snapcontent -->
+      </div> <!-- .snapresult -->
+      
+      
+      <div class="snapresult">
+        <div class="col-md-5 snapcode">
+          <!--left column: Profile pic, usernamem tagline, download button, time-->
+          <img src="squares/sc2.jpg" width="100%">
+          <h5>username</h5>
+          <p class="desc">tagline tagline tagline tagline</p>
+          <div class="underdesc">
+            <button class="btn btn-inverse" style="margin-bottom:0.6em;">Download &nbsp; &nbsp; |&nbsp; &nbsp; <i class="fa fa-arrow-circle-o-down"></i> 21 </button>
+            <div><i class="fa fa-clock-o"></i> 7:11</div>
+          </div>
+        </div> <!-- .snapcode -->
+        
+        <div class="col-md-7 snapcontent">
+          <!--right column: image carousel-->
+          
+          <div class="owl-carousel owl-carousel-responsive">
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">1</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">2</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">3</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">4</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">5</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">6</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">7</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">8</div>
+            
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg">9</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg">10</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg">11</div> 
+            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg">12</div>
+          </div>
+          
+        </div> <!-- .snapcontent -->
+      </div> <!-- .snapresult -->
+    </div> <!-- .row #results -->
+    
+    </div><img src="img/spinner.gif" style="margin: 0 auto; display:block;"></div>
+    
+  </div> <!-- .container-fluid -->
+  
+  
+  
+  <script src="dist/js/vendor/jquery.min.js"></script> 
+  <script src="dist/js/vendor/video.js"></script> 
+  <script src="dist/js/flat-ui.min.js"></script> 
+  <script src="docs/assets/js/application.js"></script> 
+  <script src="dist/js/vendor/owl.carousel.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          items:5,
+          loop:true,
+          margin:10,
+          merge:true,
+          responsive:{
+              678:{
+                  mergeFit:true
+              },
+              1000:{
+                  mergeFit:false
+              }
+          }
+      })
+    });
+  </script>
 </body>
 </html>

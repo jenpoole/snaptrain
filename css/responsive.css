@@ -1,0 +1,197 @@
+#home .container-fluid {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#profile .container-fluid, 
+#profile-confirm .container-fluid {
+  max-width: 700px;
+}
+#popular .container-fluid {
+  max-width: 750px;
+}
+#signup-1 .container-fluid,
+#signup-2 .container-fluid {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#signup-2 .container-fluid,
+#signup-3 .container-fluid {
+  max-width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+#signup-4 .container-fluid {
+  max-width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.log-in-link,
+.log-out-link {
+  padding-top: 1em;
+  padding-right: 3em;
+}
+#profile-confirm .demo-logo,
+#profile .demo-logo,
+#home .demo-logo,
+#popular .demo-logo {
+  margin-top: -40px;
+}
+.menubar-left-btn {
+  padding-left: 0;
+  width: 200px;
+}
+.menubar-right-btn {
+  padding-right: 0;
+  width: 200px;
+  float: right;
+}
+#results {
+  margin-bottom: 20px;
+}
+.snapresult {
+  /*float: none;*/
+}
+.snapcontent {
+ overflow-x: hidden; 
+ /*overflow-y: hidden; */
+ width: 350px;
+}
+/*#popular .snapcontent,*/
+#signup-4 .snapcontent {
+    width: 400px;
+}
+.owl-carousel .owl-item img {
+  height: 350px;
+  width: 150px;
+}
+.owl-controls {
+  width: 100%;
+}
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .eliminate-profile {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 995px) {
+  #signup-2 span {
+    text-align: center;
+  }
+  #signup-2 #gallery {
+    padding-right: 0 !important;
+    border: none !important;
+  }
+  #signup-2 #selfie {
+    padding-left: 0 !important;
+  }
+  #home .snapresult,
+  #profile .snapresult,
+  #home .snapresult,
+  #popular .snapresult {
+    float: none;
+  }
+  #home .snapcontent,
+  #profile .snapcontent,
+  #home .snapcontent,
+  #popular .snapcontent {
+    width: 100%
+  }
+}
+@media screen and (max-width: 750px) {
+  #login .container-fluid {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #signup-2 .container-fluid,
+  #signup-3 .container-fluid,
+  #signup-4 .container-fluid {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #popular .snapresult {
+    max-width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .btn-facebook {
+    width: 100% !important;
+  }
+  #profile .eliminate-profile {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .owl-carousel .owl-item img {
+    height: 200px;
+    width: 350px;
+  }
+  #signup-4 .snapcontent {
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 475px) {
+
+  .snapcode {
+    text-align: center;
+  }
+  .snapcode img {
+    width: 150px;
+    height: 150px;
+  }
+  #menubar {
+    text-align: center;
+    margin-left: 0;
+  }
+  .menubar-left-btn {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .btn-group.pull-right {
+    float: none !important;
+  }
+  .menubar-right-btn {
+    margin-left: -30px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .menubar-right-btn .btn-group {
+    margin-left: -10px;
+  }
+  /*#results {*/
+  /*  width: 350px;*/
+  /*  margin: 0 auto;*/
+  /*}*/
+  #home .snapcontent,
+  #popular .snapcontent,
+  #signup-4 .snapcontent {
+    /*max-width: 250px;*/
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  #signup-3 .account label input {
+    width: 100%;
+  }
+  #login .account label input,
+  #login .sign-in-btn {
+    width: 100% !important;
+  }
+}
+/*.menubar-right-btn {*/
+/*     float: none;*/
+/*    position: relative;*/
+/*}*/
+/*.menubar-right-btn.btn-group {*/
+/*  position: absolute;*/
+/*  right: -110%;*/
+/*}*/
