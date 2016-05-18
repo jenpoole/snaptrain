@@ -61,7 +61,7 @@
 }
 /*#popular .snapcontent,*/
 #signup-4 .snapcontent {
-    width: 400px;
+    /*width: 400px;*/
 }
 .owl-carousel .owl-item img {
   height: 350px;
@@ -92,14 +92,28 @@
   #home .snapresult,
   #profile .snapresult,
   #home .snapresult,
-  #popular .snapresult {
+  #popular .snapresult,
+  #signup-4 .snapresult {
     float: none;
   }
   #home .snapcontent,
   #profile .snapcontent,
   #home .snapcontent,
-  #popular .snapcontent {
+  #popular .snapcontent,
+  #signup-4 .snapcontent {
     width: 100%
+  }
+  .menubar-left-btn,
+  .menubar-right-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .menubar-left-btn {
+    margin-bottom: 10px;
+  }
+  .menubar-right-btn {
+    float: none !important;
+    margin-left: -2%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -120,6 +134,10 @@
     margin: 0 auto;
     min-width: 300px;
   }
+  #profile .demo-logo,
+  #profile-confirm .demo-logo {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 750px) {
   .btn-facebook {
@@ -135,7 +153,13 @@
     width: 350px;
   }
   #signup-4 .snapcontent {
-    max-width: 330px;
+    /*max-width: 330px;*/
+  }
+  #profile-confirm .demo-logo,
+  #profile .demo-logo,
+  #home .demo-logo,
+  #popular .demo-logo {
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -160,9 +184,9 @@
     float: none !important;
   }
   .menubar-right-btn {
-    margin-left: -30px;
-    width: 100%;
-    padding-left: 0;
+    /*margin-left: -30px;*/
+    /*width: 100%;*/
+    /*padding-left: 0;*/
   }
   .menubar-right-btn .btn-group {
     margin-left: -10px;
@@ -187,11 +211,3 @@
     width: 100% !important;
   }
 }
-/*.menubar-right-btn {*/
-/*     float: none;*/
-/*    position: relative;*/
-/*}*/
-/*.menubar-right-btn.btn-group {*/
-/*  position: absolute;*/
-/*  right: -110%;*/
-/*}*/
