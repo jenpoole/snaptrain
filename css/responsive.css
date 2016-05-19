@@ -64,8 +64,8 @@
     /*width: 400px;*/
 }
 .owl-carousel .owl-item img {
-  height: 350px;
-  width: 150px;
+  /*height: 350px;*/
+  /*width: 150px;*/
 }
 .owl-controls {
   width: 100%;
@@ -163,8 +163,8 @@
 }
 @media screen and (max-width: 600px) {
   .owl-carousel .owl-item img {
-    height: 200px;
-    width: 350px;
+    /*height: 200px;*/
+    /*width: 350px;*/
   }
   #signup-4 .snapcontent {
     /*max-width: 330px;*/
@@ -215,17 +215,17 @@
     /*max-width: 250px;*/
   }
   .owl-carousel .owl-item img {
-    height: 315px !important;
-    width: 170px !important;
-    margin-left: -120px;
+    /*height: 315px !important;*/
+    /*width: 170px !important;*/
+    /*margin-left: -120px;*/
   }
   #popular .owl-carousel .owl-item img {
-    height: 297px !important;
-    width: 160px !important;
+    /*height: 297px !important;*/
+    /*width: 160px !important;*/
   }  
   #profile .owl-carousel .owl-item img {
-    height: 344px !important;
-    width: 185px !important;
+    /*height: 344px !important;*/
+    /*width: 185px !important;*/
   }  
   #popular .snapcode img {
     margin-left: -10%;
