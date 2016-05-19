@@ -182,8 +182,8 @@
     text-align: center;
   }
   .snapcode img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
   }
   #menubar {
     text-align: center;
@@ -215,10 +215,18 @@
     /*max-width: 250px;*/
   }
   .owl-carousel .owl-item img {
-    height: 220px !important;
-    width: 118px !important;
-    margin-left: -100px;
+    height: 315px !important;
+    width: 170px !important;
+    margin-left: -120px;
   }
+  #popular .owl-carousel .owl-item img {
+    height: 297px !important;
+    width: 160px !important;
+  }  
+  #profile .owl-carousel .owl-item img {
+    height: 344px !important;
+    width: 185px !important;
+  }  
   #popular .snapcode img {
     margin-left: -10%;
   }
