@@ -57,30 +57,28 @@
                 </div>
         </div>
     <div class="row">
-            <div class="snapresult">
-                <div class="col-md-5 snapcode">
+      <div class="snapresult">
+        <div class="col-md-4 snapcode">
           <img src="squares/sc2.jpg" width="100%">
           <h5>username</h5>
           <p class="desc">tagline tagline tagline tagline</p>
         </div> <!-- .snapcode -->
         
-        <div class="col-md-7 snapcontent">
+        <div class="col-md-8 snapcontent">
           
           <div class="owl-carousel owl-carousel-responsive">
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg"></div>
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn1.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn2.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn3.jpg" style="left: 65%;"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn4.jpg" style="left: 65%;"></div>
             
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg"></div>
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn5.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn6.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn7.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn8.jpg"></div>
             
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn5.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn6.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn7.jpg"></div> 
-            <div class="item" data-merge="3"><img alt="" src="rectangles/sn8.jpg"></div>
+            <div class="item" data-merge="5"><img alt="" src="test-images/sn9.jpg"></div> 
+            <div class="item" data-merge="5"><img alt="" src="rectangles/sn6.jpg"></div> 
           </div>
           
         </div> <!-- .snapcontent -->
@@ -113,20 +111,39 @@
   <script>
     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
-          items:5,
           loop:true,
-          margin:10,
           merge:true,
+          startPosition:0,
           responsive:{
-              678:{
-                  mergeFit:true
+             0:{
+                items:2,
+                margin:10,
+                mergeFit:true
+              },
+              435:{
+                items:8,
+                margin:0,
+                mergeFit:true
+              },
+              515:{
+                items:9,
+                mergeFit:true
+              },
+              600:{
+                items:10,
+                mergeFit:true,
+                nav:true
               },
               1000:{
-                  mergeFit:false
+                items:7,
+                mergeFit:true,
+                margin:10,
+                nav:true
               }
           }
-      })
+      });
     });
   </script>
+  
   </body>
 </html>

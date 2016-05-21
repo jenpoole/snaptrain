@@ -241,3 +241,32 @@
     width: 100% !important;
   }
 }
+
+
+.item {
+    position: relative;
+    height: 320px;
+}
+.owl-carousel .owl-item img {
+  max-height: 320px;
+  width: auto !important;
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 45%;*/
+  /*transform: translate(-50%, -50%);*/
+  margin: 0 auto;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+@media screen and (min-width: 650px) {
+  .owl-carousel .owl-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
